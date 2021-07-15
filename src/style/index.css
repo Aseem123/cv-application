@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.middle {
+  overflow-x: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  min-height: 100vh;
+  border-radius: 0px;
+  background: #edebee;
+  box-shadow: -27px -27px 54px #bebebe, 27px 27px 54px #bebebe;
+}
+.personal_section {
+  width: 30%;
+  height: 100vh;
+  background: #38373c;
+}
+.contact_follow_reference,
+.about_me {
+  padding: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+p {
+  font-size: 0.8rem;
+  color: #626166;
+}
+h3 {
+  font-size: 1.4rem;
+  color: #2087a8;
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+h3::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background-color: #2087a8;
+  bottom: -2px;
+}
+
+.icon {
+  color: #2087a8;
+  font-size: 1.1rem;
+}
+/* background : #e9e9eb */
+/* #66a7ad color */
+
+@media screen and (max-width: 750px) {
+  .personal_section {
+    width: 40%;
+    height: 100vh;
+    border-right: 2px ridge;
+    background: #38373c;
+  }
+}
